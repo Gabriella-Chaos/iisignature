@@ -20,7 +20,7 @@ xtn = Extension('iisignature', ['src/pythonsigs.cpp'],
                 extra_compile_args=args,
                 extra_link_args=link_args,
                 define_macros=[("VERSION",version)],
-                include_dirs=[get_numpy_include()],
+                include_dirs=['/root/research/.venv/lib/python3.11/site-packages/numpy/_core/include'],
                 depends=["src/"+i+".hpp" for i in headers])
 
 def readme():
