@@ -73,7 +73,5 @@ setup(name='iisignature',
       #data_files=[("iisignature_data",["src/bchLyndon20.dat"])],
       package_data={"iisignature_data": ["bchLyndon20.dat"]},
       zip_safe=False,
-      install_requires=['numpy>1.7'], #For now, this is redundant as we've died above here on an import statement
-      setup_requires=['numpy>1.7'],
 )
 #should add source url from github like at https://www.python.org/dev/peps/pep-0426/
